@@ -20,6 +20,14 @@ inputDelay.addEventListener("input", (e) => {
     }
 });
 
+state.forEach(input => {
+    input.addEventListener("change", (e) => {
+        if (e.target.checked) {
+            fieldset.classList.add("active");
+        }
+    });
+});
+
 formButton.addEventListener("click", (e) => {
     e.preventDefault();
     let isAnySelected = false;
@@ -28,10 +36,8 @@ formButton.addEventListener("click", (e) => {
             isAnySelected = true;
             if (input.value === "fulfilled") {            
                 stateChoice = true;
-                fieldset.classList.add("active");
             } else if (input.value === "rejected") {
                 stateChoice = false;
-                fieldset.classList.add("active");
             }
         }
     });
