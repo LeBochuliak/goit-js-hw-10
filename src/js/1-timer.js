@@ -4,7 +4,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-import iconError from '../img/error.png';
+import iconError from "../img/error.png";
 
 
 const datetimePicker = document.querySelector("#datetime-picker");
@@ -28,7 +28,7 @@ const options = {
       if (userSelectedDate.getTime() <= Date.now()) {
           startButton.disabled = true;
           iziToast.show({
-              message: 'Please choose a date in the future',
+              message: "Please choose a date in the future",
               backgroundColor: "red",
               messageColor: "white",
               position: "topRight",
