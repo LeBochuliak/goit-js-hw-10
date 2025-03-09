@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back</a>
+    <form class="form">
+      <label class="label-delay">
+        Delay (ms)
+        <input type="number" name="delay" class="input-delay" required />
+      </label>
+
+      <fieldset class="fieldset-state">
+        <legend>State</legend>
+        <label class="label-state">
+          <input
+            type="radio"
+            name="state"
+            value="fulfilled"
+            class="input-fulfilled input-state"
+            required
+          />
+          Fulfilled
+        </label>
+        <label class="label-state">
+          <input
+            type="radio"
+            name="state"
+            value="rejected"
+            class="input-rejected input-state"
+            required
+          />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit" class="form-button">Create notification</button>
+    </form>
+
+    <script src="./js/2-snackbar.js" type="module" defer></script>
+  </body>
+</html>
